@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-display',
   imports: [],
@@ -7,5 +6,5 @@ import { Output } from '@angular/core';
   styleUrl: './display.component.css',
 })
 export class DisplayComponent {
-  @Output() number!: string;
+  @Input() number: string = '0';
 }

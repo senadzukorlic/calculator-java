@@ -1,5 +1,13 @@
 .display {
   color: white;
   height: 27vh;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.number {
+  margin-right: 40px;
+  font-size: 60px;
+  margin-bottom: 20px;
 }
