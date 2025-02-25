@@ -8,4 +8,16 @@ import { DisplayComponent } from '../display/display.component';
   templateUrl: './parent.component.html',
   styleUrl: './parent.component.css',
 })
-export class ParentComponent {}
+export class ParentComponent {
+  currentNumber: string = '0';
+
+  handleButtonPress(value: string) {
+    if (value === 'c') {
+      this.currentNumber = '0';
+    } else if (this.currentNumber === '0' && value !== '.') {
+      this.currentNumber = value;
+    } else {
+      this.currentNumber += value;
+    }
+  }
+}

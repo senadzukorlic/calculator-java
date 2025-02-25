@@ -1,6 +1,7 @@
 <button
   class="button"
   [ngStyle]="{ 'background-color': bgColor, width: width, color: textColor }"
+  (click)="onClick()"
 >
   {{ sign }}
 </button>

@@ -1,19 +1,45 @@
 <div class="buttons">
-  <app-button sign="c" bgColor="red" textColor="white" />
-  <app-button sign="x" bgColor="#D4D4D4" />
-  <app-button sign="-" bgColor="#D4D4D4" />
-  <app-button sign="+" bgColor="#D4D4D4" />
-  <app-button sign="÷" bgColor="#D4D4D4" />
-  <app-button sign="1" />
-  <app-button sign="2" />
-  <app-button sign="3" />
-  <app-button sign="4" />
-  <app-button sign="5" />
-  <app-button sign="6" />
-  <app-button sign="7" />
-  <app-button sign="8" />
-  <app-button sign="9" />
-  <app-button sign="0" />
-  <app-button sign="=" bgColor="#FF9F0A" width="23vw" />
-  <app-button sign="." width="9.5vw" />
+  <app-button
+    sign="c"
+    bgColor="red"
+    textColor="white"
+    (buttonClick)="onButtonClick($event)"
+  />
+  <app-button
+    sign="x"
+    bgColor="#D4D4D4"
+    (buttonClick)="onButtonClick($event)"
+  />
+  <app-button
+    sign="-"
+    bgColor="#D4D4D4"
+    (buttonClick)="onButtonClick($event)"
+  />
+  <app-button
+    sign="+"
+    bgColor="#D4D4D4"
+    (buttonClick)="onButtonClick($event)"
+  />
+  <app-button
+    sign="÷"
+    bgColor="#D4D4D4"
+    (buttonClick)="onButtonClick($event)"
+  />
+  <app-button sign="1" (buttonClick)="onButtonClick($event)" />
+  <app-button sign="2" (buttonClick)="onButtonClick($event)" />
+  <app-button sign="3" (buttonClick)="onButtonClick($event)" />
+  <app-button sign="4" (buttonClick)="onButtonClick($event)" />
+  <app-button sign="5" (buttonClick)="onButtonClick($event)" />
+  <app-button sign="6" (buttonClick)="onButtonClick($event)" />
+  <app-button sign="7" (buttonClick)="onButtonClick($event)" />
+  <app-button sign="8" (buttonClick)="onButtonClick($event)" />
+  <app-button sign="9" (buttonClick)="onButtonClick($event)" />
+  <app-button sign="0" (buttonClick)="onButtonClick($event)" />
+  <app-button
+    sign="="
+    (buttonClick)="onButtonClick($event)"
+    bgColor="#FF9F0A"
+    width="23vw"
+  />
+  <app-button sign="." (buttonClick)="onButtonClick($event)" width="9.5vw" />
 </div>

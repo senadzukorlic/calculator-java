@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-button',
@@ -8,10 +8,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './button.component.css',
 })
 export class ButtonComponent {
-  @Input({ required: true }) sign!: string;
-  @Input() bgColor: string = 'white'; // Default boja ako nije prosleđena
-  @Input() width: string = '6.5vw'; // Default širina ako nije prosleđena
+  @Input() sign: string = '';
+  @Input() bgColor: string = 'white';
+  @Input() width: string = '6.5vw';
   @Input() textColor: string = 'black';
-}
+  @Output() buttonClick = new EventEmitter<string>();
 
-//#D4D4D4 operator
+  onClick() {
+    this.buttonClick.emit(this.sign);
+  }
+}
