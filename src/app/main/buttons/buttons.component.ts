@@ -14,8 +14,4 @@ export class ButtonsComponent {
   onButtonClick(value: string) {
     this.buttonPressed.emit(value);
   }
-
-  // onOperationClick(value: string) {
-  //   this.operationPressed.emit(value);
-  // }
 }
