@@ -9,8 +9,13 @@ import { ButtonComponent } from './button/button.component';
 })
 export class ButtonsComponent {
   @Output() buttonPressed = new EventEmitter<string>();
+  @Output() operationPressed = new EventEmitter<string>();
 
   onButtonClick(value: string) {
     this.buttonPressed.emit(value);
   }
+
+  // onOperationClick(value: string) {
+  //   this.operationPressed.emit(value);
+  // }
 }
